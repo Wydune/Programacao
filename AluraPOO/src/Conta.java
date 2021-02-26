@@ -3,18 +3,17 @@ public class Conta {
     int agencia;
     int numero;
     String titular;
-    void deposita(double valor){
-        this.saldo = (valor + this.saldo);
+
+    public void /**Quando não existe qualquer tipo de retorno ao acionarmos um método, utilizamos a palavra-chave void*/
+    deposita(double valor){
+        this.saldo += valor;
     }
-    public boolean saca(double valor){
-        if(this.saldo>=valor){
+    public boolean saca(double valor) {
+        if (this.saldo >= valor) {
             this.saldo -= valor;
             return true;
         } else {
             return false;
         }
-    }
-    public boolean transfere(double valor, Conta destino){
-        if(this.saldo>= valor)
     }
 }

@@ -10,8 +10,5 @@ public class CriaConta {
          segundaConta.saldo = 50;
         System.out.println ("primeira conta "+primeiraConta.saldo);
         System.out.println ("segunda conta "+segundaConta.saldo);
-        System.out.println (primeiraConta.agencia);
-        System.out.println (primeiraConta.numero);
-        System.out.println (primeiraConta.titular);
     }
 }
